@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Lottie2APNG.WPF.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Lottie2APNG.WPF"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources />
+</Application>

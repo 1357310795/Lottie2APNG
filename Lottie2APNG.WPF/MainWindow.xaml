@@ -1,0 +1,218 @@
+﻿<Window
+    x:Class="Lottie2APNG.WPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:Lottie2APNG.WPF.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Lottie2APNG.WPF"
+    xmlns:lottie="clr-namespace:LottieSharp.WPF;assembly=LottieSharp"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Lottie2APNG"
+    Width="880"
+    Height="600"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <converters:BoolReverseConverter x:Key="BoolReverseConverter" />
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <DockPanel
+            Grid.Row="0"
+            Grid.ColumnSpan="3"
+            Margin="12">
+            <Button
+                Width="100"
+                Height="30"
+                Click="ButtonLoad_Click"
+                Content="Load" />
+            <TextBox Margin="8,0,0,0" Text="{Binding FilePath, Mode=OneWay}" />
+        </DockPanel>
+        <lottie:LottieAnimationView
+            Grid.Row="1"
+            Grid.Column="1"
+            AutoPlay="True"
+            FileName="{Binding FilePath}"
+            RepeatCount="-1" />
+        <GridSplitter
+            Grid.Row="1"
+            Grid.Column="0"
+            Width="4"
+            HorizontalAlignment="Right"
+            Background="#01FFFFFF" />
+        <DockPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            LastChildFill="False">
+            <GroupBox
+                Margin="10,4"
+                Padding="8"
+                DockPanel.Dock="Top"
+                Header="Dimension Settings">
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock Text="Image size: " />
+                    <TextBox
+                        MinWidth="60"
+                        Margin="8,0,0,0"
+                        Text="{Binding ImageWidth}" />
+                    <TextBlock Margin="4,0,0,0" Text="x" />
+                    <TextBox
+                        MinWidth="60"
+                        Margin="4,0,0,0"
+                        Text="{Binding ImageHeight}" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox
+                Margin="10,4"
+                Padding="8"
+                DockPanel.Dock="Top"
+                Header="Playback Settings">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <CheckBox Content="Play infinitely" IsChecked="{Binding Infinitely}" />
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <TextBox
+                            MinWidth="60"
+                            IsEnabled="{Binding Infinitely, Converter={StaticResource BoolReverseConverter}}"
+                            Text="{Binding Loops}" />
+                        <TextBlock Margin="8,0,0,0" Text="loops" />
+                    </StackPanel>
+                    <CheckBox
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Margin="0,8,0,0"
+                        Content="Skip the first frame"
+                        IsChecked="{Binding SkipFirst}" />
+                </Grid>
+            </GroupBox>
+            <GroupBox
+                Margin="10,4"
+                Padding="8"
+                DockPanel.Dock="Top"
+                Header="Delay (FPS) Settings">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <TextBlock Text="Delay:" />
+                        <TextBox
+                            MinWidth="30"
+                            Margin="8,0,0,0"
+                            Text="{Binding DelayNum}" />
+                        <TextBlock Margin="4,0,0,0" Text="/" />
+                        <TextBox
+                            MinWidth="30"
+                            Margin="4,0,0,0"
+                            Text="{Binding DelayDen}" />
+                        <TextBlock Margin="8,0,0,0" Text="seconds" />
+                    </StackPanel>
+                    <TextBlock Margin="0,4,0,0">
+                        <Run Text="Default: " />
+                        <Run Text="{Binding CurrentFps}" />
+                    </TextBlock>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox
+                Margin="10,4"
+                Padding="8"
+                DockPanel.Dock="Top"
+                Header="Compression Settings">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1.8*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition MinHeight="20" />
+                        <RowDefinition MinHeight="20" />
+                        <RowDefinition MinHeight="20" />
+                    </Grid.RowDefinitions>
+                    <RadioButton
+                        VerticalAlignment="Center"
+                        Content="zlib"
+                        GroupName="compression"
+                        IsChecked="{Binding UseZlib}" />
+                    <RadioButton
+                        Grid.Row="1"
+                        VerticalAlignment="Center"
+                        Content="7zip"
+                        GroupName="compression"
+                        IsChecked="{Binding Use7zip}" />
+                    <RadioButton
+                        Grid.Row="2"
+                        VerticalAlignment="Center"
+                        Content="Zopfli"
+                        GroupName="compression"
+                        IsChecked="{Binding UseZopfli}" />
+                    <StackPanel
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                        <TextBox
+                            MinWidth="60"
+                            IsEnabled="{Binding Use7zip}"
+                            Text="{Binding Iter1}" />
+                        <TextBlock Margin="8,0,0,0" Text="iterations" />
+                    </StackPanel>
+                    <StackPanel
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                        <TextBox
+                            MinWidth="60"
+                            IsEnabled="{Binding UseZopfli}"
+                            Text="{Binding Iter2}" />
+                        <TextBlock Margin="8,0,0,0" Text="iterations" />
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            <GroupBox
+                Margin="10,4"
+                Padding="8"
+                DockPanel.Dock="Top"
+                Header="Optimization Settings">
+
+                <StackPanel Grid.Column="1" Orientation="Vertical">
+                    <CheckBox Content="Optimize palette" IsChecked="{Binding Palette}" />
+                    <CheckBox
+                        Margin="0,8,0,0"
+                        Content="Optimize color type"
+                        IsChecked="{Binding ColorType}" />
+                </StackPanel>
+            </GroupBox>
+            <Button
+                Height="30"
+                Margin="12,4,12,12"
+                Click="ButtonExport_Click"
+                Content="Export"
+                DockPanel.Dock="Bottom" />
+            <Grid
+                Height="24"
+                Margin="12,4"
+                DockPanel.Dock="Bottom">
+                <ProgressBar
+                    Maximum="1"
+                    Minimum="0"
+                    Value="{Binding Progress}" />
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text="{Binding Message}" />
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

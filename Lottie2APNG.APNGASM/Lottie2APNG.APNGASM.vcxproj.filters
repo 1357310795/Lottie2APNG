@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\7z">
+      <UniqueIdentifier>{f7d916a8-1693-4c4d-9550-d82b83755afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\libpng">
+      <UniqueIdentifier>{689816e8-7e70-49f5-8419-8079e15216ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\zlib">
+      <UniqueIdentifier>{e4022ce0-fae4-4a33-9642-2904af69602b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\zopfli">
+      <UniqueIdentifier>{1f9bf4c1-7f65-444b-ab99-ad3dc2698d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\7z">
+      <UniqueIdentifier>{5d7b600f-013d-4bc1-951a-a77d025d1114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\zlib">
+      <UniqueIdentifier>{41a76cd6-89fd-4ebe-bc39-648bece0f0b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\libpng">
+      <UniqueIdentifier>{91996274-a33f-4cfc-8a41-1605fafbbfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\zopfli">
+      <UniqueIdentifier>{9cbb33a9-93b1-4a27-8762-ad342eec50f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\7z.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\AriBitCoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\AriConst.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\AriPrice.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree2.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree2Main.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree3.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree3Main.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree3Z.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree3ZMain.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree4.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree4b.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree4bMain.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTree4Main.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTreeMain.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTreeMF.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BinTreeMFMain.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\BitTreeCoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\Const.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\CRC.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\DeflateDecoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\DeflateEncoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\HuffmanDecoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\HuffmanEncoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\IInOutStreams.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\InByte.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LenCoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LiteralCoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LSBFDecoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LSBFEncoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LZMA.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LZMADecoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\LZMAEncoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\OutByte.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\Portable.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\RangeCoder.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\RCDefs.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\WindowIn.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="7z\WindowOut.h">
+      <Filter>头文件\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\png.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngconf.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngdebug.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pnginfo.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pnglibconf.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngpriv.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="libpng\pngstruct.h">
+      <Filter>头文件\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\blocksplitter.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\cache.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\deflate.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\gzip_container.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\hash.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\katajainen.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\lz77.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\squeeze.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\symbols.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\tree.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\util.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\zlib_container.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zopfli\zopfli.h">
+      <Filter>头文件\zopfli</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate1.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\gzguts.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>头文件\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="api_result.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="apngmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="export_helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\7zdeflate.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\7zlzma.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\AriBitCoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\CRC.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\DeflateDecoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\DeflateEncoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\HuffmanEncoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\IInOutStreams.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\InByte.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LenCoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LiteralCoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LSBFDecoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LSBFEncoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LZMA.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LZMADecoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\LZMAEncoder.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\OutByte.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\WindowIn.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="7z\WindowOut.cc">
+      <Filter>源文件\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\png.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngerror.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngget.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngmem.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngpread.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngread.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrio.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrtran.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngrutil.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngset.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngtrans.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwio.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwrite.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwtran.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="libpng\pngwutil.c">
+      <Filter>源文件\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\blocksplitter.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\cache.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\deflate.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\gzip_container.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\hash.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\katajainen.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\lz77.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\squeeze.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\tree.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\util.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\zlib_container.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zopfli\zopfli_lib.c">
+      <Filter>源文件\zopfli</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate1.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>源文件\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="apngasm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="apngmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
